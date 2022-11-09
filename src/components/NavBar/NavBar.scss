@@ -1,0 +1,163 @@
+@import '../../App.scss';
+
+.nav {
+  border-bottom: 1px solid #ccc;
+}
+
+.left-nav {
+  background: rgba(25, 25, 25, .97);
+  position: fixed;
+  bottom:0;
+  width: 255px;
+  top: 50px;
+  font-weight: 600;
+    
+      ul {
+        list-style-type: none;
+      }
+    
+      li {
+        color: #fff;
+        padding: 22px 0;
+        border-bottom: 1px solid #4e4e4e;
+        cursor: pointer;
+        font-size: 13px;
+
+        &:last-of-type {
+          color: #e33d26;
+          border: none;
+          font-size: 18px;
+        }
+      }
+}
+
+.hamburger {
+  width: 20px;
+  height: 20px;
+  margin: 14px 10px;
+
+  &--close {
+    fill: #e33d26;
+  }
+}
+
+.navIcons {
+  height: 18px;
+  width: 20px;
+  padding: 0 14px;
+  margin: 14px 0;
+
+  &:last-of-type {
+    border-left: 1px solid #ccc;
+  }
+}
+
+.desktop-nav {
+  @include for-size(desktop) {
+  border-bottom: 1px solid #ccc;
+  height: 63px;
+  }
+}
+
+.logout {
+  margin-top: 20px;
+  color: #999;
+  font-size: 13px;
+}
+
+.account {
+  @include for-size(tablet) {
+    color:#999;
+    font-size: 13px;
+    margin-top: 133px;
+  }
+
+  @include for-size(desktop) {
+    display: inherit;
+    height: 63px;
+    width: 55px;
+  }
+}
+
+.navButtons {
+  @include for-size(desktop) {
+    min-width: 381px;
+  }
+}
+
+.navLabel {
+  color: #666;
+  
+  @include for-size(desktop) {
+    padding: 26px 0 0 0;
+    margin-right: 20px;
+    font-size: 12px;      
+    min-width: 90px;
+
+    &:hover {
+      border-bottom: 4px solid #666;
+      color: #666;          
+      cursor: pointer;
+      text-decoration: none;
+      }
+    }
+}
+
+.recipe-box {
+  @include for-size(desktop) {
+    padding: 15px 4px 0 4px;
+    margin-top: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px 2px 0 0;
+    width: 110px;
+    text-align: center;
+    color: #e33d26;
+
+    &:hover {
+      background-color: #f2f3ef;
+      cursor: pointer;
+      color: #c01b00;
+    }
+  }
+}
+
+.logo {
+  @include for-size(tablet) {
+    width: 131px;
+    height: 25px;
+  }
+  @include for-size(desktop) {
+    display: block;
+    max-width: 168px;
+    min-width: 31px;
+    padding: 18px 46px 20px 21px;
+  }
+}
+
+.logo-wrap {
+  @include for-size(tablet) {
+    padding: 10px 0
+  }
+
+  @include for-size(desktop) {
+    border-right: 1px solid #ccc;
+  }
+}
+
+.gear {
+  @include for-size(tablet) {
+    width: 16px;
+    height: 16px;
+    fill: #999;
+    margin-right: 8px;
+  }
+
+  @include for-size(desktop) {
+    fill: #666;
+        
+    &:hover {
+      fill: #e33d26;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../App.scss';
+
+.search-wrap {
+    @include for-size(desktop) {
+        height: 100%;
+        max-width: 320px;
+        min-width: 270px;
+        margin: 25px 0 25px 25px;
+    }
+}
+
+.search-input {
+    border: 0;
+    font-size: 1rem;
+    height: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+.magnify {
+    @include for-size(desktop) {
+        height: 20px;
+        width: 17px;
+        margin-right: 5px;
+    }
+}
+
+.form {
+    width: 100%;
+}
