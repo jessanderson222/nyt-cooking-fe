@@ -1,5 +1,11 @@
-const ContentContainer = () => {
-  return <h3>stuff goess here</h3>;
+import RecipeOfTheDay from "../RecipeOfTheDay";
+
+const ContentContainer = ({ recipes }) => {
+  return (
+    <div>
+      <RecipeOfTheDay recipes={recipes} />
+    </div>
+  );
 };
 
 export default ContentContainer;

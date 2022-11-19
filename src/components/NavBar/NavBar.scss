@@ -53,7 +53,7 @@
 }
 
 .desktop-nav {
-  @include for-size(desktop) {
+  @include media(desktop) {
   border-bottom: 1px solid #ccc;
   height: 63px;
   }
@@ -66,13 +66,13 @@
 }
 
 .account {
-  @include for-size(tablet) {
+  @include media(mobile, tablet, tablet-large) {
     color:#999;
     font-size: 13px;
     margin-top: 133px;
   }
 
-  @include for-size(desktop) {
+  @include media(desktop) {
     display: inherit;
     height: 63px;
     width: 55px;
@@ -80,7 +80,7 @@
 }
 
 .navButtons {
-  @include for-size(desktop) {
+  @include media(desktop) {
     min-width: 381px;
   }
 }
@@ -88,7 +88,7 @@
 .navLabel {
   color: #666;
   
-  @include for-size(desktop) {
+  @include media(desktop) {
     padding: 26px 0 0 0;
     margin-right: 20px;
     font-size: 12px;      
@@ -104,7 +104,7 @@
 }
 
 .recipe-box {
-  @include for-size(desktop) {
+  @include media(desktop) {
     padding: 15px 4px 0 4px;
     margin-top: 10px;
     font-size: 12px;
@@ -123,11 +123,11 @@
 }
 
 .logo {
-  @include for-size(tablet) {
+  @include media(mobile, tablet, tablet-large) {
     width: 131px;
     height: 25px;
   }
-  @include for-size(desktop) {
+  @include media(desktop) {
     display: block;
     max-width: 168px;
     min-width: 31px;
@@ -136,24 +136,24 @@
 }
 
 .logo-wrap {
-  @include for-size(tablet) {
+  @include media(mobile, tablet, tablet-large) {
     padding: 10px 0
   }
 
-  @include for-size(desktop) {
+  @include media(desktop) {
     border-right: 1px solid #ccc;
   }
 }
 
 .gear {
-  @include for-size(tablet) {
+  @include media(mobile, tablet, tablet-large) {
     width: 16px;
     height: 16px;
     fill: #999;
     margin-right: 8px;
   }
 
-  @include for-size(desktop) {
+  @include media(desktop) {
     fill: #666;
         
     &:hover {

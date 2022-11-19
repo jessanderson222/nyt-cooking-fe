@@ -1,0 +1,99 @@
+@import '../../App.scss';
+
+.rotd-badge {
+    color: #fff;
+    background-color: #e33d26;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+
+    @include media(tablet, mobile) {
+        border-radius: 11px;
+        font-size: 11px;
+        margin-bottom: -11px;
+        margin-left: -71px;
+        margin-top: -10px;
+        padding: 4px 7px;
+        position: relative;
+        width: 142px;
+        left: 50%;
+    }
+
+    @include media(tablet-large, desktop) {
+        border-radius: 50%;
+        width: 108px;
+        height: 108px;
+        top: -50px;
+        left: auto;
+        right: -54px;
+        padding: 40px 10px 0 10px;
+        font-size: 12px;
+        position: absolute;
+    }
+}
+
+.rotd-image {
+    height: 100%;
+    width: 100%;
+}
+
+.rotd {
+    @include media(tablet-large, desktop) {
+        min-height: 300px;
+        max-height: 510px;
+        overflow: hidden;
+    }
+}
+
+.rotd-label-content {
+    @include media(mobile, tablet) {
+        display: block;
+        padding: 30px;
+        margin: 0 auto;
+        max-width: 445px;
+        vertical-align: middle;
+    }
+    
+    @include media(tablet-large, desktop) {
+        display: table-cell;
+        margin: 0 auto;
+        max-width: 445px;
+        padding: 52px 30px 30px;
+        vertical-align: middle;
+    }
+}
+
+.rotd-label {
+    text-align: center;
+    color: black;
+
+    @include media(tablet-large, desktop) {
+        position: absolute;
+        bottom: 160px;
+        right: 85px;
+        background-color: #fff;
+        display: table;
+        min-height: 280px;
+        position: absolute;
+        width: 320px;
+        box-sizing: border-box;
+    }
+        a:hover {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+}
+
+.rotd-name {
+    font-size: 34px;
+    margin: 0 0 10px 0;
+    font-weight: normal;
+}
+
+.br {
+    @include media(tablet-large, desktop) {
+        display: block;
+    }
+}

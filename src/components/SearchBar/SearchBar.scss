@@ -1,7 +1,7 @@
 @import '../../App.scss';
 
 .search-wrap {
-    @include for-size(desktop) {
+    @include media(desktop) {
         height: 100%;
         max-width: 320px;
         min-width: 270px;
@@ -23,7 +23,7 @@
 }
 
 .magnify {
-    @include for-size(desktop) {
+    @include media(desktop) {
         height: 20px;
         width: 17px;
         margin-right: 5px;

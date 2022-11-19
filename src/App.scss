@@ -1,14 +1,22 @@
-@mixin for-size($size) {
-  @if $size == phone {
-    @media (max-width: 599px) { @content; }
-  } @else if $size == tablet {
-    @media (max-width: 1023px) { @content; }
-  } @else if $size == desktop {
-    @media (min-width: 1024px) { @content; }
-  } 
+$breakpoints: (
+  mobile: 0px,
+  tablet: 600px,
+  tablet-large: 765px,
+  desktop: 1024px);
+
+@mixin media($keys...) {
+  @each $key in $keys {
+    @media (min-width: map-get($breakpoints, $key)) {
+      @content
+    }
+  }
 }
 
 .app {
+  display: block;
+}
+
+.block {
   display: block;
 }
 
@@ -20,8 +28,28 @@
   margin: auto;
 }
 
+.mt-10 {
+  margin-top: 10px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
 .bold {
   font-weight: bold;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-tnr {
+  font-family: "Times New Roman";
 }
 
 .width-100 {
@@ -42,4 +70,13 @@
 
 .pointer {
   cursor: pointer;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+a,
+u {
+  text-decoration: none;
 }

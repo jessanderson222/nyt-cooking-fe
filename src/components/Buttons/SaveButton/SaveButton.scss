@@ -1,0 +1,44 @@
+@import '../../../App.scss';
+
+.button-red {
+    padding: 11px 16px;
+    background-color: #df321b;
+    border: 1px solid #df321b;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #d03a26;
+        border-color: #d03a26;
+    }
+}
+
+.button-lg {
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.save-icon {
+    width: 11px;
+    height: 14px;
+    stroke-width: 1;
+}
+
+.button-gray {
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .8);
+    border: 1px solid #363835;
+    color: #fff;
+    float: left;
+    height: 35px;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    letter-spacing: .3px;
+
+    &:hover {
+        background-color: #e33d26;
+        border-color: #e33d26;
+    }
+}

@@ -13,7 +13,6 @@ const Nav = () => {
   const onMenuClick = () => {
     setLeftNav(!leftNav);
   };
-  console.log(leftNav);
 
   return (
     <div>
